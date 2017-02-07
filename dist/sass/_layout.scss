@@ -1,0 +1,200 @@
+header {
+  .logo {
+    z-index: 999;
+    a {
+      display: inline-block;
+      font-family: 'Lobster', cursive;
+      font-size: 43px;
+      padding-bottom: 5px;
+      color: #44c0c2;
+      &:hover {
+        color: #3a3731;
+      }
+    }
+  }
+
+  .nav-bar {
+    float: right;
+    li {
+      float: left;
+      & + li {
+        margin-left: 11.5px;
+      }
+
+      a {
+        display: inline-block;
+        font-size: 15px;
+        color: #484c55;
+        text-transform: capitalize;
+        padding: 42px 25px 40px 18px;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+          color: #49cbcd;
+          background: #f8f9fb;
+          border-bottom: 3px solid #49cbcd;
+        }
+      }
+      &:last-child {
+        a {
+          padding-right: 2px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height: 100vh;
+  background: url("../img/footer-bg.jpg");
+  background-size: cover;
+  color: #fff;
+  @media (max-width: 991px) {
+    padding: 50px 0;
+    height: auto;
+  }
+  .contacts {
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .block {
+      width: 50%;
+      display: inline-block;
+      @media (max-width: 991px) {
+        width: 75%;
+        text-align: center;
+        & + .block {
+          margin-bottom: 50px;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+
+      }
+    }
+    .left {
+      float: left;
+      span {
+        display: block;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        display: inline-block;
+        width: 435px;
+        line-height: 1.5;
+        margin-bottom: 35px;
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+      }
+
+      .social {
+        display: inline-block;
+        li {
+          float: left;
+          & + li {
+            margin-left: 15px;
+          }
+          a {
+            display: inline-block;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            text-align: center;
+            color: #fff;
+            font-size: 22px;
+            &.facebook {
+              background: #3b5997;
+            }
+            &.twitter {
+              background: #3ec2f3;
+            }
+            &.google {
+              background: #e44c41;
+            }
+            &:hover {
+              -webkit-transform: scale(1.1);
+              -moz-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+              -o-transform: scale(1.1);
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+
+      .posted-by {
+        margin-top: 20px;
+        li {
+          & + li {
+            margin-top: 10px;
+          }
+          a {
+            color: #bface2;
+          }
+        }
+      }
+    }
+
+    .right {
+      float: right;
+      .input-group {
+        input {
+          width: 48%;
+          height: 45px;
+          border-radius: 3px;
+          margin-bottom: 30px;
+          padding: 0 20px;
+          font-size: 16px;
+          border: 2px solid transparent;
+          &:last-child {
+            float: right;
+          }
+          @media (max-width: 991px) {
+            width: 100%;
+          }
+        }
+      }
+
+      textarea {
+        width: 100%;
+        padding: 20px;
+        max-height: 400px;
+        resize: vertical;
+        border-radius: 3px;
+        font-size: 16px;
+        border: 2px solid transparent;
+
+
+      }
+
+      button {
+        display: inline-block;
+        float: right;
+        margin-top: 30px;
+        background: #49cbcd;
+        padding: 12px 60px;
+        border-radius: 3px;
+        border: 2px solid transparent;
+        font-size: 22px;
+        color: #fff;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+        &:hover {
+          background: transparent;
+          border: 2px solid #49cbcd;
+        }
+        @media (max-width: 991px) {
+          float: none;
+        }
+      }
+    }
+  }
+}
