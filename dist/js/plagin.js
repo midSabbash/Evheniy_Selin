@@ -3,7 +3,7 @@
     var btn = document.querySelector('.send-btn');
     var name = document.querySelector('input[type="text"]');
     var email = document.querySelector('input[type="email"]');
-    var massage = document.querySelector('#commit');
+    var massage = document.getElementById('commit');
 
     var regExp_name = /^[a-zA-Zа-яА-Я]+$/; // reg for name
     var regExp_email = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;  //reg for email
